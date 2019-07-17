@@ -9,10 +9,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 
 <body>
+
 <div class="bg-image" style="height: 60vh;"></div>
-<!-- <div style="border: solid 10px; border-color: white;">
-</div> -->
-<div class="w3-center w3-margin-top bg-text">
+
+<div class="new" style="width: 100vw">
+</div>
+
+<div class="w3-center w3-margin-top bg-text" id="customanimate">
 	<div class="container" style="margin: 10vh">
 		<h1 style="font-size: 4em">Moviwear</h1>
 
@@ -27,7 +30,7 @@
 <!-- Main Pequeno Guardian -->
 <div class="w3-container" style="background-color: white" id="main">
 	<div class="row2">
-		<div class="w3-row-padding w3-center w3-margin-top" style="background-color: white; margin-bottom: 50px">
+		<div class="w3-row-padding w3-center w3-margin-top" style="background-color: white; ">
 			<div class="w3-half">
 				<div class="w3-container" style="min-height:460px;width: 100%; margin-top:15%;">
 					<img src="https://cdnl.tblsft.com/sites/default/files/blog/picture15.png" style="width: 100%">
@@ -53,8 +56,8 @@
 	<h2 style="font-size: 3em; margin-bottom: 50px; padding: 15px"> Our Products </h2>
 </div> -->
 <hr> 
-<h1 style=" font-size: 3em; margin: 0px; padding-bottom: 5px; text-align: center; margin-top: 100px">Our Products</h1>
-<hr style="margin-top: 0px; margin-left: 40vw; margin-right: 40vw; margin-bottom: 100px; border: solid 1px; border-color: #AAA">
+<h1 style=" font-size: 3em; margin: 0px; padding-bottom: 5px; text-align: center; transform: translate(0%, 50px);">Our Products</h1>
+<hr style="margin-top: 0px; margin-left: 40vw; margin-right: 40vw; margin-bottom: 100px; border: solid 1px; border-color: #AAA; transform: translate(0%, 50px);">
 <div class="w3-container">
 	<div class="row2">
 		<div class="w3-row-padding w3-center w3-margin-top" style="margin-bottom: 60px">
@@ -89,13 +92,29 @@
 </div>
 
 
-<hr>
+<!-- is this your section Jorden? if not delete it -->
+<div class="w3-container">
+	<div class="row2" style="">
+		<div class="w3-row-padding w3-center w3-margin-top " style="margin-bottom: 0px">
+			<div class="w3-half" style="padding-left:40px;">
+				<div class="w3-container">
+				</div>
+			</div>
+
+			<div class="w3-half" style="padding-left:8vw;">
+				<div class="w3-container">
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END of section -->
 
 
 
 <!-- Our Platform -->
 <div style="width: 100%; background-color: #1899f5; margin bottom: 0px; color: white; text-align: center;">
-	<h2 style="font-size: 3em; margin: 0px; padding: 15px"> Benefits </h2>
+	<h2 style="font-size: 3em; margin: 0px; padding: 15px"> Benifits </h2>
 </div>
 
 <!-- Is moviwear right for you -->
@@ -145,17 +164,17 @@
 
 function PSW() {
 	var industry = document.getElementById("custom") ;
-	industry.innerHTML = "<!-- PSW Section--><div class=\"w3-container\" style=\" width: 100%; padding-left: 20vw; padding-right: 20vw;padding-bottom: 100px;\"><div class=\"\" onclick=\"newrow()\"><div class=\"w3-container industry-img\" style=\"background-color: #CCC; min-height:150px; padding: 2vw;\"><h3 style=\"color: black; font-weight: bold;\">PSW Agency</h4><p  class=\"\" style=\"\">With the Moviwear platform you can easily reduce the costs of care and increase the value of your service to your clients. Cost reduction is important here and depending how you set up your service, this could be a major reduction. You can essentially provide your clients with 24/7 care without the need for a PSW agent to be constantly there. Moviwear will take care of the monitoring and allow your agents to take care of the physical needs, potentially allowing them to spread their time between more clients.</p><p><b>Reduce your costs by:</b></p><ul><li>requiring less time spent physically next to clients</li><li>reducing overhead on monitoring the location of clients</li><li>reudcing the costs of liability by preventing incidents</li></ul></p><p><b>Increase the value of your service with:</b></p><ul><li>providing 24/7 care to your clients</li><li>giving your clients more peace of mind due to increased care</li><li>offering a premium service that other PSW agencies don't offer</li></ul></div></div></div>\";"
+	industry.innerHTML = "<!-- PSW Section--><div class=\"w3-container w3-animate-left\" style=\" width: 100%; padding-left: 20vw; padding-right: 20vw;padding-bottom: 100px;\"><div class=\"\" onclick=\"newrow()\"><div class=\"w3-container industry-img\" style=\"background-color: #CCC; min-height:150px; padding: 2vw;\"><h3 style=\"color: black; font-weight: bold;\">PSW Agency</h4><p  class=\"\" style=\"\">With the Moviwear platform you can easily reduce the costs of care and increase the value of your service to your clients. Cost reduction is important here and depending how you set up your service, this could be a major reduction. You can essentially provide your clients with 24/7 care without the need for a PSW agent to be constantly there. Moviwear will take care of the monitoring and allow your agents to take care of the physical needs, potentially allowing them to spread their time between more clients.</p><p><b>Reduce your costs by:</b></p><ul><li>requiring less time spent physically next to clients</li><li>reducing overhead on monitoring the location of clients</li><li>reudcing the costs of liability by preventing incidents</li></ul></p><p><b>Increase the value of your service with:</b></p><ul><li>providing 24/7 care to your clients</li><li>giving your clients more peace of mind due to increased care</li><li>offering a premium service that other PSW agencies don't offer</li></ul></div></div></div>\";"
 }
 
 function Retirement() {
 	var industry = document.getElementById("custom") ;
-	industry.innerHTML = "<!-- PSW Section--><div class=\"w3-container\" style=\" width: 100%; padding-left: 20vw; padding-right: 20vw;padding-bottom: 100px;\"><div class=\"\" onclick=\"newrow()\"><div class=\"w3-container industry-img\" style=\"background-color: #CCC; min-height:150px; padding: 2vw;\"><h3 style=\"color: black; font-weight: bold;\">Retierment Care</h4><p  class=\"\" style=\"\">Moviwear gives you the platform you need to reduce your costs and increase the value of your service to residents. The benifit of cost reduction is apparent, but they increased care you provide is priceless. Not only will it give you a premium service your competitors can't provide, but this may save a life, and will give peace of mind to a group of people who deserve it the most.</p><p><b>Reduce your costs by:</b></p><ul><li>requiring less room checks for residents</li><li>reducing overhead on monitoring patients loactions</li><li>reudcing the costs of liability by preventing incidents</li></ul></p><p><b>Increase the value of your service with:</b></p><ul><li>improving your care with increased security for your residents</li><li>provide a premium service that other homes don't offer</li><li>provide more peace of mind to your residents, soemthing extremly valuable to residents</li></ul></div></div></div>\";"
+	industry.innerHTML = "<!-- PSW Section--><div class=\"w3-container w3-animate-left\" style=\" width: 100%; padding-left: 20vw; padding-right: 20vw;padding-bottom: 100px;\"><div class=\"\" onclick=\"newrow()\"><div class=\"w3-container industry-img\" style=\"background-color: #CCC; min-height:150px; padding: 2vw;\"><h3 style=\"color: black; font-weight: bold;\">Retierment Care</h4><p  class=\"\" style=\"\">Moviwear gives you the platform you need to reduce your costs and increase the value of your service to residents. The benifit of cost reduction is apparent, but they increased care you provide is priceless. Not only will it give you a premium service your competitors can't provide, but this may save a life, and will give peace of mind to a group of people who deserve it the most.</p><p><b>Reduce your costs by:</b></p><ul><li>requiring less room checks for residents</li><li>reducing overhead on monitoring patients loactions</li><li>reudcing the costs of liability by preventing incidents</li></ul></p><p><b>Increase the value of your service with:</b></p><ul><li>improving your care with increased security for your residents</li><li>provide a premium service that other homes don't offer</li><li>provide more peace of mind to your residents, soemthing extremly valuable to residents</li></ul></div></div></div>\";"
 }
 
 function Insurance() {
 	var industry = document.getElementById("custom") ;
-	industry.innerHTML = "<!-- PSW Section--><div class=\"w3-container\" style=\" width: 100%; padding-left: 20vw; padding-right: 20vw;padding-bottom: 100px;\"><div class=\"\" onclick=\"newrow()\"><div class=\"w3-container industry-img\" style=\"background-color: #CCC; min-height:150px; padding: 2vw;\"><h3 style=\"color: black; font-weight: bold;\">Insurance Provider</h4><p  class=\"\" style=\"\">If you’re an insurance company that deals with at risk people, this product just makes sense. With our platform having a faster response time means less accidents taking place, or escalating to a unfortunate, and costly, outcome.</p><p><b>Reduce your costs by:</b></p><ul><li>preventing or reducing the impact of critical emergencies, therefore saving your company from big payouts</li><p></ul><b>Increase the value of your service by:</b><ul><li>providing an extra level of care through premium insurance packages</li><li>offering peace of mind beyond finances</li></ul></div></div></div>\";"
+	industry.innerHTML = "<!-- PSW Section--><div class=\"w3-container w3-animate-left\" style=\" width: 100%; padding-left: 20vw; padding-right: 20vw;padding-bottom: 100px;\"><div class=\"\" onclick=\"newrow()\"><div class=\"w3-container industry-img\" style=\"background-color: #CCC; min-height:150px; padding: 2vw;\"><h3 style=\"color: black; font-weight: bold;\">Insurance Provider</h4><p  class=\"\" style=\"\">If you’re an insurance company that deals with at risk people, this product just makes sense. With our platform having a faster response time means less accidents taking place, or escalating to a unfortunate, and costly, outcome.</p><p><b>Reduce your costs by:</b></p><ul><li>preventing or reducing the impact of critical emergencies, therefore saving your company from big payouts</li><p></ul><b>Increase the value of your service by:</b><ul><li>providing an extra level of care through premium insurance packages</li><li>offering peace of mind beyond finances</li></ul></div></div></div>\";"
 }
 
 </script>
@@ -210,77 +229,32 @@ function Insurance() {
 	</div>
 </div>
 
-<hr>
-
-<!-- Featured Partner -->
-<div class="w3-container">
-	<h2 class="heading" style="color: black;">Featured Partner</h2>
-	<div class="row2" style="">
-		<div class="w3-row-padding w3-center w3-margin-top " style="margin-bottom: 60px">
-			<div class="w3-half" style="padding-left:6vw;">
-				<div class="w3-container">
-					<img src="cerna.jpg" alt="cerna logo">
-					<p style="font-size:28px;">Aging in Place Made Easy!</p>
-					<p style="font-size:20px;font-weight:lighter;">Cerna Homecare uses NurtureWatch to offer its client a low-cost, compelling aging-in-place solution.</p>
-				</div>
-			</div>
-
-			<div class="w3-half" style="padding-left:10vw;">
-				<div class="w3-container">
-					<p style="text-align: left; color: black;font-size:30px;">Why Does Cerna Choose Us:</p>
-					<ul style="text-align:left;margin:0;padding:0;font-size:18px;">
-						<li style="padding:5px;">Generates New Revenue Streams</li>
-						<li style="padding:5px;">Extensive Corporate Wellness</li>
-						<li style="padding:5px;">Extensive Aging in Place and Child Tracking Technologies</li>
-						<li style="padding:5px;">Advanced APIs and Technology Support</li>
-						<li style="padding:5px;">OEM Products</li>
-						<li style="padding:5px;">Easy to Join Partner Program</li>
-						<li style="padding:5px;">Resources to Help You</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</div>
-</div>
-
 <!-- Contact Footer -->
 <div class="w3-row" style="background-color:black;">
 	<div class="w3-row-padding w3-center w3-margin-top " style="margin-bottom: 10px">
-		<div class="w3-third" style="color:white;text-align: left;padding-left:8vw">
+		<div class="w3-third" style="color:white;text-align: left;">
 			<div class="w3-container">
 				<h3>QUICK LINKS</h3>
-				<ul style="list-style:none;margin:0;padding:0;">
-					<li style="padding-top:10px;"><a href="#main" style="text-decoration: none;">Home</li></a>
-					<li style="padding-top:10px;"><a href="https://www.nurturewatch.com/collections/all" style="text-decoration: none;">Catalog</li></a>
-					<li style="padding-top:10px;"><a href="../pequenofaq.pdf" style="text-decoration: none;">FAQ</li></a>
-				</ul>
+				<p><a href="#main" style="text-decoration: none;">Home</a></p>
+				<p><a href="https://www.nurturewatch.com/collections/all" style="text-decoration: none;">Catalog</a></p>
+				<p><a href="../pequenofaq.pdf" style="text-decoration: none;">FAQ</a></p>
 			</div>
 		</div>
 		<div class="w3-third"  style="color:white;text-align:left;">
 			<div class="w3-container">
 				<h3>HELP</h3>
-				<ul style="list-style:none;margin:0;padding:0;">
-					<li style="padding-top:10px;">Contact Us At sales@nurturewatch.com</li>
-					<li style="padding-top:10px;">Privacy Policy</li>
-					<li style="padding-top:10px;">End User License Agreement</li>
-				</ul>
+				<p>Contact Us At sales@nurturewatch.com</p>
+				<p>Privacy Policy</p>
+				<p>End User License Agreement</p>
 			</div>
 		</div>
 		<div class="w3-third">
-			<div class="w3-container" style="color:white;text-align:left;">
+			<div class="w3-container">
 				<h3 style="color:white;text-align:left;">CONNECT WITH US</h3>
-				<ul style="list-style:none;margin:0;padding:0;">
-					<li style="padding-top:10px;"><a href="https://www.facebook.com" style="text-decoration: none;">Facebook</li></a>
-					<li style="padding-top:10px;"><a href="https://www.twitter.com" style="text-decoration: none;">Twitter</li></a>
-					<li style="padding-top:10px;"><a href="https://www.instagram.com" style="text-decoration: none;">Instagram</li></a>
-					<li style="padding-top:10px;"><a href="https://www.linkedin.com" style="text-decoration: none;">LinkedIn</li></a>
-				</ul>
-			</div>
-		</div>
-		<div class="w3">
-			<div class="w3-container" style="color:white;text-align:left;">
-				<hr style="color:white;margin-left:6vw;margin-right:5vw;margin-top:5vh;">
-				<p style="padding-left: 6vw;">&copy; 2019 MoviWear</p>
+				<p style="color:white;text-align:left;"><a href="https://www.facebook.com" style="text-decoration: none;">Facebook</a></p>
+				<p style="color:white;text-align:left;"><a href="https://www.twitter.com" style="text-decoration: none;">Twitter</a></p>
+				<p style="color:white;text-align:left;"><a href="https://www.instagram.com" style="text-decoration: none;">Instagram</a></p>
+				<p style="color:white;text-align:left;"><a href="https://www.linkedin.com" style="text-decoration: none;">LinkedIn</a></p>
 			</div>
 		</div>
 	</div>

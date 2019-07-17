@@ -7,6 +7,19 @@ html,body {
 body {
   width:100%px;
 }
+
+/* The animation code */
+@keyframes example {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+/* The element to apply the animation to */
+#customanimate {
+  animation-name: example;
+  animation-duration: 2s;
+}
+
 .bg-image {
   /* The image used */
   background-image: url("Movi.png");
@@ -23,7 +36,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   
-  
+
 }
 .bg-text {
   margin-top: 300px;
@@ -34,6 +47,20 @@ body {
   border: 3px solid #f1f1f1;
   position: absolute;
   top: 30vh;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 60%;
+  text-align: center;
+}
+.new {
+  width: 100vw;
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.5); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 15px solid #f1f1f1;
+  position: absolute;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
