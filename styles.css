@@ -8,6 +8,10 @@ body {
   width:100%px;
 }
 
+a:hover, a:active {
+  background-color: red;
+}
+
 /* The animation code */
 @keyframes example {
   from {opacity: 0;}
