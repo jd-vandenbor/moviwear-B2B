@@ -12,6 +12,10 @@ a:hover, a:active {
   background-color: red;
 }
 
+.article-image {
+  height: 70px;
+}
+
 /* The animation code */
 @keyframes example {
   from {opacity: 0;}
