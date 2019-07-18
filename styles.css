@@ -157,3 +157,8 @@ a:hover, a:active {
 .industry-img:hover {
   box-shadow: 0 0 12px 6px rgba(0, 140, 186, 0.5);
 }
+
+.instaimg:hover {
+  opacity: 0.6;
+  transition:0.5s;
+}
