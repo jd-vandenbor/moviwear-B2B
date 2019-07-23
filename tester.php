@@ -1,3 +1,17 @@
+<?php 
+if(isset($_POST['submit'])){
+    $to = "nurturewatchintern1@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $name = $_POST['name'];
+    $message = $name . " wrote the following:" . "\n\n" . $_POST['message'];
+
+    $headers = "From:" . $from;
+    mail($to,$subject,$message,$headers);
+    echo "Mail Sent. Thank you " . $name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    }
+?>
+
 <!DOCTYPE html>
 <html>
 <title>Moviwear</title>
@@ -28,7 +42,7 @@
 
 <div class="w3-center w3-margin-top bg-text" id="customanimate">
 	<div class="container" style="margin: 10vh">
-		<h1 style="font-size: 4em">MoviWear</h1>
+		<h1 style="font-size: 4em">Moviwear</h1>
 
 	</div>
 </div>
@@ -97,16 +111,10 @@
 			</div>
 
 			<div class="w3-third">
-				<div class="w3-container" style="width: 100%;position:relative;">
-					<img style="text-align:center;height: 300px;padding-bottom:20px;filter: blur(6px);-webkit-filter: blur(6px);" src="4gbig.png">
-					<p style="top:25%;left:31%;position:absolute;font-size:20px;color:white;background-color:grey;padding:10px;border:1px solid black;">COMING SOON</p>
-					<h2 style="font-weight:bold;padding-bottom:15px;clear:both;">NurtureWatch Infinity</h2>
-					<p style="text-align:left; color: #777;">The NurtureWatch Infinity is the updated 4G version of the NurtureWatch that comes equipped with longer battery life and a new upgraded charging station. More details will be released soon, but the watch will come with the following items:</p>
-					<ul style="text-align: left; color: #777;">
-					  <li>The NurtureWatch Infinity</li>
-					  <li>Upgraded charging station</li>
-					  <li>One year of service</li>
-					</ul>
+				<div class="w3-container" style="width: 100%">
+					<img style="height: 300px;padding-bottom:20px;" src="4gbig.png">
+					<h2 style="font-weight:bold;padding-bottom:15px;">NurtureWatch 2</h2>
+					<p style="text-align:left; color: #777;">The NurtureWatch 2 is the updated 4G version of the NurtureWatch that comes equipped with longer battery life and a new charging station. More details coming soon!</p>
 				</div>
 			</div>
 		</div>
@@ -171,7 +179,7 @@ function PSW() {
 
 function Retirement() {
 	var industry = document.getElementById("custom") ;
-	industry.innerHTML = "<!-- PSW Section--><div class=\"w3-container w3-animate-left\" style=\" width: 100%; padding-left: 20vw; padding-right: 20vw;padding-bottom: 100px;\"><div class=\"\" onclick=\"newrow()\"><div class=\"w3-container industry-img\" style=\"background-color: #CCC; min-height:150px; padding: 2vw;\"><h3 style=\"color: black; font-weight: bold;\">Retirement Care</h4><p  class=\"\" style=\"\">Moviwear gives you the platform you need to reduce your costs and increase the value of your service to residents. The benifit of cost reduction is apparent, but they increased care you provide is priceless. Not only will it give you a premium service your competitors can't provide, but this may save a life, and will give peace of mind to a group of people who deserve it the most.</p><p><b>Reduce your costs by:</b></p><ul><li>requiring less room checks for residents</li><li>reducing overhead on monitoring patients loactions</li><li>reudcing the costs of liability by preventing incidents</li></ul></p><p><b>Increase the value of your service with:</b></p><ul><li>improving your care with increased security for your residents</li><li>provide a premium service that other homes don't offer</li><li>provide more peace of mind to your residents, soemthing extremly valuable to residents</li></ul></div></div></div>\";"
+	industry.innerHTML = "<!-- PSW Section--><div class=\"w3-container w3-animate-left\" style=\" width: 100%; padding-left: 20vw; padding-right: 20vw;padding-bottom: 100px;\"><div class=\"\" onclick=\"newrow()\"><div class=\"w3-container industry-img\" style=\"background-color: #CCC; min-height:150px; padding: 2vw;\"><h3 style=\"color: black; font-weight: bold;\">Retierment Care</h4><p  class=\"\" style=\"\">Moviwear gives you the platform you need to reduce your costs and increase the value of your service to residents. The benifit of cost reduction is apparent, but they increased care you provide is priceless. Not only will it give you a premium service your competitors can't provide, but this may save a life, and will give peace of mind to a group of people who deserve it the most.</p><p><b>Reduce your costs by:</b></p><ul><li>requiring less room checks for residents</li><li>reducing overhead on monitoring patients loactions</li><li>reudcing the costs of liability by preventing incidents</li></ul></p><p><b>Increase the value of your service with:</b></p><ul><li>improving your care with increased security for your residents</li><li>provide a premium service that other homes don't offer</li><li>provide more peace of mind to your residents, soemthing extremly valuable to residents</li></ul></div></div></div>\";"
 }
 
 function Insurance() {
@@ -196,7 +204,7 @@ function Insurance() {
 
 <div class="w3-container" style="padding-left: 15vw; padding-right: 15vw; margin-bottom: 50px">
 	<p>Send us your name and email as well as any questions you have for us. Let us know what it is you need to for your company, and how moviwear can work with you to help create those solutions with our platform. You can also send us any inquires for partnerships, or if you would rather contact us in a different way, all of our contact information is at the bottom of the page <a>here.</a></p>
-	<form>
+	<form method="post">
 		<div class="w3-half" >
 			<p>Email:</p>
 			<input class="form2" type="text" name="email" style="width: 85%">
@@ -206,7 +214,7 @@ function Insurance() {
 			<input class="form2" type="text" name="name" style="width: 85%">
 		</div>
   			<textarea class="form1" placeholder="Some text..." name="message"></textarea>
-  			<input type="submit" name="submit" value="Submit" style="margin-top:20px;padding:5px;">
+  			<input type="submit" name="submit" value="Submit">
 	</form>
 </div>
 
@@ -268,7 +276,7 @@ function Insurance() {
 <div style="padding-left:12vw; padding-right:12vw; margin-bottom: 40px; margin-top: 100px;">
 	<hr style="width: 35%; float: left; border: solid 1px; border-color: black;"><h3 style="transform: translate(0%, -.5em); float: left; padding-left: 10%; ">Article links</h3><hr style="border: solid 1px; border-color: black; width: 35%; float: right;">
 
-	<div style="float: none; display: inline-block;margin-bottom:50px;">
+	<div style="float: none; display: inline-block;">
 		<a href=""><img  class="article-image" src=".\articleImages\1.PNG"></a>
 		<a href=""><img class="article-image" src=".\articleImages\2.PNG"></a>
 		<a href="https://ksby.com/healthy-living/2019/03/01/new-technology-aims-to-aid-seniors"><img class="article-image" src=".\articleImages\3.PNG"></a>
@@ -292,8 +300,17 @@ function Insurance() {
 </div>
 
 
+<hr>
 
+<!-- Instagram Feed -->
+<div class="container" style="margin-bottom:60px;">
+	<h2 style="text-align:center;font-size:40px;margin-bottom:60px;margin-top:30px;">Follow Us On Instagram!</h2>
+	<div id="instafeed" class="row" style="margin:auto;margin-bottom:80px;">
+	</div>
+</div>
 
+<!-- LinkedIn Section -->
+<center style="padding-bottom:50px;"><iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6556943043042381824" allowfullscreen="" title="Embedded post" width="450" height="450" frameborder="0"></iframe></center>
 
 <!-- Contact Footer -->
 <div class="w3-row" style="background-color:black;padding-top:30px;">
