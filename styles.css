@@ -191,7 +191,30 @@ body {
 
 /* adjusting for mobile*/
 @media only screen and (max-width: 600px) {
+  .mobilefullwidth {
+    width: 100% !important;
+  }
+
+  .mobilecenter {
+    text-align: center !important;
+  }
+
+  .quick-links {
+    margin-left: 0% !important;
+    padding-left: 3vw !important;
+  }
+  .article-image {
+    height: 30px !important;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+  .article-image:hover {
+    height: 50px !important;
+  }
   
+  .industry {
+    width: 100% !important;
+  }
   .bg-image {
     height: 30vh !important;
   }
@@ -208,12 +231,13 @@ body {
     font-size: 2em !important;
   }
 
-
   /*  */
   .platform-image-container {
     min-height:0px; width: 100%; margin-top:5%; padding-left: 0px; padding-right: 0px;
   }
 
-
+  .desktop-only {
+    display: none;
+  }
 
 } 

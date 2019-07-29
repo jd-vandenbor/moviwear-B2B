@@ -21,7 +21,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 
-<div class="bg-image" style="height: 60vh;"></div>
+<div class="bg-image" style="height: 60vh; overflow: hidden;"></div>
 
 
 <div class="w3-center w3-margin-top bg-text" id="customanimate">
@@ -42,7 +42,7 @@
 			</div>
 			<div class="w3-half" style="text-align: left;">
 				<div class="w3-container" style="min-height:460px;">
-					<h2 style="color: black; text-align: left;font-size:60px;font-weight:bold;margin-top:12%;">The Platform</h2>
+					<h2 class="mobilecenter" style="color: black; text-align: left;font-size:60px;font-weight:bold;margin-top:12%;">The Platform</h2>
 					<p style="text-align: left; color: #777;">Our platform is an all encompassing solution for monitoring end users through our devices and back end framework. We will give you access to a dashboard that measures vitals, tracks location, and provides voice contact for all those that your company cares for. Work with us to set up a third party monitoring solution or have staff monitor your users internally. Whatever your needs we can work with you to provide a monitoring solution. Whatever it takes to ensure the safety of those you care for, we believe in taking the steps necessary to providing that solution.</p>
 					<hr>
 					<b>How it works:</b>
@@ -90,13 +90,15 @@
 					  <li>One year of service</li>
 					  <li>Pendant (lanyard), and belt clip</li>
 					</ul>
+					<hr class="mobile-only">
+
 				</div>
 			</div>
 
 			<div class="w3-third">
 				<div class="w3-container" style="width: 100%;position:relative;">
 					<img style="text-align:center;height: 300px;padding-bottom:20px;filter: blur(6px);-webkit-filter: blur(6px);" src="4gbig.png">
-					<p style="top:25%;left:31%;position:absolute;font-size:20px;color:white;background-color:grey;padding:10px;border:1px solid black;">COMING SOON</p>
+					<p style="margin-left: 50%; width: 200px; top:25%; left: -100px; position:absolute;font-size:20px;color:white;background-color:grey;padding:10px;border:1px solid black;">COMING SOON</p>
 					<h2 style="font-weight:bold;padding-bottom:15px;clear:both;">NurtureWatch Infinity</h2>
 					<p style="text-align:left; color: #777;">The NurtureWatch Infinity is the updated 4G version of the NurtureWatch that comes equipped with longer battery life and a new upgraded charging station. More details will be released soon, but the watch will come with the following items:</p>
 					<ul style="text-align: left; color: #777;">
@@ -104,7 +106,7 @@
 					  <li>Upgraded charging station</li>
 					  <li>One year of service</li>
 					</ul>
-					<hr class="mobile-only">
+					
 
 				</div>
 			</div>
@@ -140,21 +142,24 @@
 	<div class="w3-third" onclick="PSW()">
 	  <div class="w3-container" style="min-height:150px">
 	  	<h3 style="color: black; font-weight: bold;">PSW Agency</h3>
-	  	<img  class="industry-img" src="https://www.williscollege.com/wp-content/uploads/2018/09/PSW-courses-1.jpg" style="width: 23vw">
+		  <a href="#indend"><img  class="industry industry-img" src="https://www.williscollege.com/wp-content/uploads/2018/09/PSW-courses-1.jpg" style="width: 23vw"></a>
+		  <hr class="mobile-only">		  
 	  </div>
 	</div>
 
 	<div class="w3-third" onclick="Retirement()">
 	  <div class="w3-container" style="min-height:150px">
 	  	<h3 style="color: black; font-weight: bold;">Retirement Care</h3>
-	  	<img class="industry-img" src="http://bayfieldmanorltc.com/@assets/uploads/gallery/large.240.jpg" style="width: 23vw">
+		  <a href="#indend"><img class="industry industry-img" src="http://bayfieldmanorltc.com/@assets/uploads/gallery/large.240.jpg" style="width: 23vw"></a>
+		  <hr class="mobile-only">
 	  </div>
 	</div>
 
 	<div class="w3-third" onclick="Insurance()">
 	  <div class="w3-container" style="min-height:150px">
 	  	<h3 style="color: black; font-weight: bold;">Insurance provider</h3>
-	  	<img class="industry-img" src="https://cdn.versadial.com/wp-content/uploads/2015/06/business-call-recording-liability-insurance.jpg" style="width: 23vw">
+		  <a href="#indend"><img class="industry industry-img" src="https://cdn.versadial.com/wp-content/uploads/2015/06/business-call-recording-liability-insurance.jpg" style="width: 23vw"></a>
+		  <hr class="mobile-only">		  
 	  </div>
 	</div>
 
@@ -178,6 +183,7 @@ function Insurance() {
 }
 
 </script>
+	<div id="indend"></div>
 
 <!-- end of industries -->
 
@@ -197,14 +203,14 @@ function Insurance() {
 	<form method="post" action="email.php">
 		<div class="w3-half" >
 			<p>Email:</p>
-			<input class="form2" type="text" name="email" style="width: 85%">
+			<input class="mobilefullwidth form2" type="text" name="email" style="width: 85%">
 		</div>
 		<div class="w3-half">
 			<p>Name</p>
-			<input class="form2" type="text" name="name" style="width: 85%">
+			<input class="mobilefullwidth form2" type="text" name="name" style="width: 85%">
 		</div>
   			<textarea class="form1" placeholder="Some text..." name="message"></textarea>
-  			<input type="submit" name="submit" value="Submit" style="margin-top:20px;padding:5px;">
+  			<input class="mobilefullwidth" type="submit" name="submit" value="Submit" style="margin-top:20px;padding:5px;">
 	</form>
 </div>
 
@@ -214,10 +220,10 @@ function Insurance() {
 		<div class="w3-row-padding w3-center w3-margin-top " style="margin-bottom: 60px">
 			<div class="w3-half" style="padding-left:10vw;">
 				<div class="w3-container">
-					<h2 class="heading" style="color: black; text-align: left; margin-bottom: 0px; margin-top: 80px ">Meet Our CEO</h2>
+					<h2 class="mobilecenter heading" style="color: black; text-align: left; margin-bottom: 0px; margin-top: 80px ">Meet Our CEO</h2>
 					<p style=" margin-top: 1em; text-align: left; color: black; font-size: 1.5em; color: #444">Jacob Moshinsky, CEO of the company, created Moviwear when his great uncle reached an elderly age and had a scary moment.</p>
 					<p style="text-align: left; color: black; font-size: 1.5em; color: #444; font-style: italic;">I wish my family would have been able to know that he fell so they could save him. By the time they reached him it was too late.</p>
-					<p style=" margin-top: 2em; text-align: left; color: #777;">Jacob Moshinsky, 2019</p>
+					<p class="mobilecenter" style=" margin-top: 2em; text-align: left; color: #777;">Jacob Moshinsky, 2019</p>
 				</div>
 			</div>
 
@@ -247,7 +253,7 @@ function Insurance() {
 			</div>
 			<div class="w3-half" style="padding-left:10vw;padding-top:50px;">
 				<div class="w3-container">
-					<p style="font-size:30px;text-align:left;">Why Does Cerna Choose Us?</p>
+					<p class="" style="font-size:30px;text-align:left;">Why Does Cerna Choose Us?</p>
 					<ul style="margin:0;padding:0;text-align:left;">
 						<li style="padding-bottom:5px;font-size:18px;">Generates New Revenue Streams</li>
 						<li style="padding-bottom:5px;font-size:18px;">Extensive Corporate Wellness</li>
@@ -265,7 +271,9 @@ function Insurance() {
 
 <!-- article links -->
 <div style="padding-left:12vw; padding-right:12vw; margin-bottom: 40px; margin-top: 100px;">
-	<hr style="width: 35%; float: left; border: solid 1px; border-color: black;"><h3 style="transform: translate(0%, -.5em); float: left; padding-left: 9%; ">Featured Media</h3><hr style="border: solid 1px; border-color: black; width: 35%; float: right;">
+	<hr class="desktop-only" style="width: 35%; float: left; border: solid 1px; border-color: black;"><h3 class="desktop-only" style="transform: translate(0%, -.5em); float: left; padding-left: 9%; ">Featured Media</h3><hr class="desktop-only" style="border: solid 1px; border-color: black; width: 35%; float: right;">
+	<h2 class="mobile-only" style="text-align: center;">Featured Media</h2>
+	<hr class="mobile-only">
 	<div style="float: none; display: inline-block; text-align: center;">
 		<a href="https://homebusinessmag.com/success-stories-lifestyles/monkey-jabber-keeping-kids-safe-fun-practical-way/"><img  class="article-image" src=".\articleImages\1.PNG"></a>
 		<a href="https://startupheretoronto.com/type/profiles/monkey-jabbers-wearable-device-helps-family-caregivers-stay-connected-to-the-elderly/"><img class="article-image" src=".\articleImages\2.PNG"></a>
@@ -305,11 +313,11 @@ function Insurance() {
 </div>
 
 <!-- Contact Footer -->
-<div class="w3-row" style="background-color:black;padding-top:30px;">
+<div class="w3-row " style="background-color:black;padding-top:30px;">
 	<div class="w3-row-padding w3-center w3-margin-top " style="margin-bottom: 10px">
-		<div class="w3-third" style="color:white;text-align: left; padding-left:8vw;">
+		<div class="w3-third quick-links" style="color:white;text-align: left; padding-left:8vw;">
 			<div class="w3-container">
-				<h3 style="margin-bottom:20px;">QUICK LINKS</h3>
+				<h3 class="" style="margin-bottom:20px;">QUICK LINKS</h3>
 				<p><a href="#main" style="text-decoration: none;color:white;">Home</a></p>
 				<p><a href="https://www.nurturewatch.com/collections/all" style="text-decoration: none;color:white;">Catalog</a></p>
 				<p><a href="../pequenofaq.pdf" style="text-decoration: none;color:white;">FAQ</a></p>
