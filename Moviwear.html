@@ -23,27 +23,20 @@
 
 <div class="bg-image" style="height: 60vh;"></div>
 
-<div class="new" style="width: 100vw">
-</div>
 
 <div class="w3-center w3-margin-top bg-text" id="customanimate">
-	<div class="container" style="margin: 10vh">
-		<h1 style="font-size: 4em">MoviWear</h1>
-
+	<div class="logo-container" style="text-align: center; padding: 10%">
+		<h1 class="logo" style="font-size: 4em">MoviWear</h1>
 	</div>
 </div>
 
 
-
-
-
-
-<!-- Main Pequeno Guardian -->
+<!-- Our Platform -->
 <div class="w3-container" style="background-color: white" id="main">
 	<div class="row2">
 		<div class="w3-row-padding w3-center w3-margin-top" style="background-color: white; ">
 			<div class="w3-half">
-				<div class="w3-container" style="min-height:460px;width: 100%; margin-top:15%;">
+				<div class="platform-image-container w3-container">
 					<img src="https://cdnl.tblsft.com/sites/default/files/blog/picture15.png" style="width: 100%">
 				</div>
 			</div>
@@ -62,8 +55,9 @@
 </div>
 <!-- END	-->
 
-<hr>
 
+<hr>
+<!-- Our Products -->
 <h1 style=" font-size: 3em; margin: 0px; padding-bottom: 5px; text-align: center; transform: translate(0%, 50px);">Our Products</h1>
 <hr style="margin-top: 0px; margin-left: 40vw; margin-right: 40vw; margin-bottom: 100px; border: solid 1px; border-color: #AAA; transform: translate(0%, 50px);">
 <div class="w3-container">
@@ -79,8 +73,11 @@
 					  <li>Basic charging cable</li>
 					  <li>One year of service</li>
 					</ul>
+					<hr class="mobile-only" style="">
+
 				</div>
 			</div>
+
 
 			<div class="w3-third">
 				<div class="w3-container" style="width: 100%">
@@ -107,12 +104,13 @@
 					  <li>Upgraded charging station</li>
 					  <li>One year of service</li>
 					</ul>
+					<hr class="mobile-only">
+
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
 
 <!-- Our Platform -->
 <div style="width: 100%; background-color: #1899f5; margin bottom: 0px; color: white; text-align: center;">
@@ -196,7 +194,7 @@ function Insurance() {
 
 <div class="w3-container" style="padding-left: 15vw; padding-right: 15vw; margin-bottom: 50px">
 	<p>Send us your name and email as well as any questions you have for us. Let us know what it is you need to for your company, and how moviwear can work with you to help create those solutions with our platform. You can also send us any inquires for partnerships, or if you would rather contact us in a different way, all of our contact information is at the bottom of the page <a>here.</a></p>
-	<form>
+	<form method="post" action="email.php">
 		<div class="w3-half" >
 			<p>Email:</p>
 			<input class="form2" type="text" name="email" style="width: 85%">
@@ -217,14 +215,15 @@ function Insurance() {
 			<div class="w3-half" style="padding-left:10vw;">
 				<div class="w3-container">
 					<h2 class="heading" style="color: black; text-align: left; margin-bottom: 0px; margin-top: 80px ">Meet Our CEO</h2>
-					<p style="text-align: left; color: black; font-size:30px; color: #444">"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
-					<p style="text-align: left; color: #777;">Jacob Moshinsky, 2019</p>
+					<p style=" margin-top: 1em; text-align: left; color: black; font-size: 1.5em; color: #444">Jacob Moshinsky, CEO of the company, created Moviwear when his great uncle reached an elderly age and had a scary moment.</p>
+					<p style="text-align: left; color: black; font-size: 1.5em; color: #444; font-style: italic;">I wish my family would have been able to know that he fell so they could save him. By the time they reached him it was too late.</p>
+					<p style=" margin-top: 2em; text-align: left; color: #777;">Jacob Moshinsky, 2019</p>
 				</div>
 			</div>
 
 			<div class="w3-half" style="padding-left:6vw;">
 				<div class="w3-container">
-					<img src="ceo.jpg" alt="portrait of ceo" style="border-radius: 250px; border: 0.5px solid black">
+					<img class="jacob" src="ceo.jpg" alt="portrait of ceo" style="border-radius: 250px; border: 0.5px solid black">
 				</div>
 			</div>
 		</div>
@@ -243,7 +242,7 @@ function Insurance() {
 		<div class="w3-row-padding w3-center w3-margin-top " style="margin-bottom: 20px">
 			<div class="w3-half" style="padding-left:6vw;">
 				<div class="w3-container">
-					<img src="cerna.jpg" alt="cerna logo" style="padding:20px;">
+					<img class="cerna" src="cerna.jpg" alt="cerna logo" style="padding:20px;">
 				</div>
 			</div>
 			<div class="w3-half" style="padding-left:10vw;padding-top:50px;">
@@ -267,7 +266,7 @@ function Insurance() {
 <!-- article links -->
 <div style="padding-left:12vw; padding-right:12vw; margin-bottom: 40px; margin-top: 100px;">
 	<hr style="width: 35%; float: left; border: solid 1px; border-color: black;"><h3 style="transform: translate(0%, -.5em); float: left; padding-left: 9%; ">Featured Media</h3><hr style="border: solid 1px; border-color: black; width: 35%; float: right;">
-	<div style="float: none; display: inline-block;">
+	<div style="float: none; display: inline-block; text-align: center;">
 		<a href="https://homebusinessmag.com/success-stories-lifestyles/monkey-jabber-keeping-kids-safe-fun-practical-way/"><img  class="article-image" src=".\articleImages\1.PNG"></a>
 		<a href="https://startupheretoronto.com/type/profiles/monkey-jabbers-wearable-device-helps-family-caregivers-stay-connected-to-the-elderly/"><img class="article-image" src=".\articleImages\2.PNG"></a>
 		<a href="https://ksby.com/healthy-living/2019/03/01/new-technology-aims-to-aid-seniors"><img class="article-image" src=".\articleImages\3.PNG"></a>
@@ -300,7 +299,7 @@ function Insurance() {
 			<div id="instafeed" class="w3-card-4"><h2 style="text-align:center;font-size:40px;padding: 10px;"><img src="IG.jpg" style="height: 40px; margin-left: -1vw">Instagram</h2></div>
 		</div>
 		<div class="w3-half">
-			<div id="" class="w3-card-4"><h2 style="text-align:center;font-size:40px;padding: 10px;"><img src="LinkedIn.png" style="height: 40px; margin-left: -1vw"> LinkedIn</h2><iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6556943043042381824" allowfullscreen="" title="Embedded post" height="100%" width="100%" frameborder="0" style="height:525px;width:100%;"></iframe></div>
+			<div id="" class="w3-card-4"><h2 style="text-align:center;font-size:40px;padding: 10px;"><img src="LinkedIn.png" style="height: 40px; margin-left: -1vw"> LinkedIn</h2><iframe src="https://www.linkedin.com/embed/feed/update/urn:li:share:6556943043042381824" allowfullscreen="" title="Embedded post" frameborder="0" style="height:525px;width:100%;"></iframe></div>
 		</div>
 	</div>
 </div>
