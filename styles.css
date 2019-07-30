@@ -240,4 +240,13 @@ body {
     display: none;
   }
 
+  .benefits-text {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+  }
+
+  .industry-text {
+    padding: 5vw !important;
+  }
+
 } 
