@@ -201,7 +201,6 @@
 		  <hr class="mobile-only">		  
 	  </div>
 	</div>
-
 </div>
 
 <script type="text/javascript">
@@ -260,7 +259,7 @@ function Insurance() {
 			<div class="w3-half" style="padding-left:10vw;">
 				<div class="w3-container">
 					<h2 class="mobilecenter heading" style="color: black; text-align: left; margin-bottom: 0px; margin-top: 80px ">Meet Our CEO</h2>
-					<p style=" margin-top: 1em; text-align: left; color: black; font-size: 1.5em; color: #444">Jacob Moshinsky, CEO of the company, created Moviwear when his great uncle reached an elderly age and had a scary moment.</p>
+					<p style=" margin-top: 1em; text-align: left; color: black; font-size: 1.5em; color: #444">Jacob Moshinsky, CEO of the company, created MoviWear when his great uncle reached an elderly age and had a scary moment.</p>
 					<p style="text-align: left; color: black; font-size: 1.5em; color: #444; font-style: italic;">I wish my family would have been able to know that he fell so they could save him. By the time they reached him it was too late.</p>
 					<p class="mobilecenter" style=" margin-top: 2em; text-align: left; color: #777;">Jacob Moshinsky</p>
 				</div>
@@ -402,4 +401,14 @@ function Insurance() {
 
 
 </style>
+
+<script>
+function languageDetect() {
+	var str = navigator.language;
+	if (str.includes("es")) {
+		window.location.href = "moviwear-spanish.html";
+	}
+}
+window.onload = languageDetect();
+</script>
 </html>
