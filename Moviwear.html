@@ -21,14 +21,16 @@
 <script type="text/javascript" src="./js/custom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-<div style="overflow: hidden; width: 100%; height: 100vh;margin-bottom:50px;border:5px solid black;">
+<div class="mobile-hero-video desktop-only" style="overflow: hidden; width: 100%; height: 100vh;margin-bottom:50px;border:5px solid black;">
 	<img src="logonobackground.png" style="z-index:1;position:absolute;width:35%;right:0px;top:0px;">
-	<p style="z-index:1;position:absolute;width:35%;left:25px;bottom:0px;color:white;">double click for volume</p>
-    <video controls autoplay loop muted id="myVideo" height="auto" style="position:relative;">
-        <source src="nwvideo.mp4" type="video/mp4">
-        Your browser does not support HTML5 video.
-    </video>
+	<p style="z-index:1;position:absolute;width:35%;left:25px;bottom:0px;color:white;">doble clic para volumen</p>
+	<video controls autoplay loop muted id="myVideo" height="auto" style="position:relative;">
+		<source src="nwvideo.mp4" type="video/mp4">
+			Your browser does not support HTML5 video.
+	</video>
 </div>
+	
+<iframe class="mobile-only" width="100%" height="315" src="https://www.youtube.com/embed/qvmQKwsqUt4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 <hr>
 
@@ -412,18 +414,6 @@ function Insurance() {
 </div>
 </body>
 
-<style>
-#myVideo {
-    min-width:100%;
-    object-fit: fill;
-}
-
-.rotateimage {
-	-webkit-transform: rotate(90deg);
-}
-
-</style>
-
 <script>
 function languageDetect() {
 	var str = navigator.language;
@@ -433,4 +423,5 @@ function languageDetect() {
 }
 window.onload = languageDetect();
 </script>
+
 </html>

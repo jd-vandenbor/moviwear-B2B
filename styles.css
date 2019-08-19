@@ -65,6 +65,10 @@ body {
   width: 60%;
   text-align: center;
 }
+#myVideo {
+  min-width:100%;
+  object-fit: fill;
+}
 .new {
   width:100%;
   background-color: rgb(0,0,0); /* Fallback color */
