@@ -67,7 +67,7 @@ body {
 }
 #myVideo {
   min-width:100%;
-  object-fit: fill;
+  object-fit: cover;
 }
 .new {
   width:100%;
