@@ -8,7 +8,7 @@ $(document).ready(function() {
         resolution: 'standard_resolution',
         accessToken: '5718126223.1677ed0.430bd7562372408cb2d3612957a81843',
         sortBy: 'most-recent',
-        template: '<div><a href="{{image}}" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" style="width:100% "></a></div>',
+        template: '<div><a href="http://www.instagram.com/moviwear" title="{{caption}}" target="_blank"><img src="{{image}}" alt="{{caption}}" style="width:100% "></a></div>',
     });
 
 
