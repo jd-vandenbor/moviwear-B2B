@@ -253,4 +253,14 @@ body {
     padding: 5vw !important;
   }
 
+  .platform-text {
+    padding-left: 5vw !important;
+    padding-right: 5vw !important;
+  }
+
+  .platform-img {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
 } 
